@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Images en carousel des 8 regions</title>
+        <link rel="stylesheet" href="Niger.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <h3>Nazir-code made it !</h3>
+            <nav>
+                <ul>
+                   <button><li><a href="#">Accueil</a></li></button> 
+                    <button><li><a href="#">Services</a></li></button>
+                    <button><li><a href="#">A propos</a></li></button>
+                    <button><li><a href="#">Contact</a></li></button>
+                </ul>         
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="slide">
+                <div class="item" style="background-image: url(/geek/ethical/tumblr_inline_ooi59gVFzS1s5i37l_1280.jpg);">
+                    <div class="content">
+                        <div class="name">NIGER..</div>
+                        <div class="des">Bienvenue au Niger <br>
+                        un pays <br> Sahelo-saharienne <br>
+                    passez a la page suivante <br> pour decouvrir <br>
+                la beaute Niger <br> </div>
+                        <button><a href="https://fr.wikipedia.org/wiki/Niger">voir plus</a></button>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(/geek/ethical/Niamey_La_capitale_1.jpg);">
+                    <div class="content">
+                        <div class="name">Niamey</div>
+                        <div class="des">Nyala</div>
+                        <button><a href="https://fr.wikipedia.org/wiki/Niamey">voir plus</a></button>
+                    </div>
+                 </div>
+
+                 <div class="item"style="background-image: url(/geek/ethical/WelcomeTillaberiV2.jpg);">
+                    <div class="content">
+                       <div class="name">Tillaberi</div>
+                        <div class="des">Tchandallo</div>
+                        <button><a href="https://fr.wikipedia.org/wiki/Tillab%C3%A9ri_(r%C3%A9gion)">voir plus</a></button>
+                    </div>
+                   </div>
+
+                   <div class="item" style="background-image: url(/geek/ethical/Niger\,_Dosso_\(28\)\,_city_gate.jpg);">
+                    <div class="content">
+                      <div class="name">Dosso</div>
+                      <div class="des">Sogha</div>
+                      <button><a href="">voir plus</a></button>
+                   </div>
+                  </div> 
+
+                  <div class="item" style="background-image: url(/geek/ethical/Maradi_Niger.jpg);">
+                    <div class="content">
+                        <div class="name">Maradi</div>
+                        <div class="des">Kolliya</div>
+                        <button><a href="">voir plus</a></button>
+                    </div>
+                </div> 
+
+                <div class="item"   style="background-image: url(/geek/ethical/abbusslogo.png);">
+                    <div class="content">
+                        <div class="name">Tahoua</div>
+                        <div class="des">Sokola</div>
+                        <button><a href="">voir plus</a></button>
+                    </div>
+                    </div>  
+
+                    <div class="item" style="background-image: url(/geek/ethical/images\ \(4\).jpeg);">
+                        <div class="content">
+                            <div class="name">Agadez</div>
+                            <div class="des">Sokni</div>
+                            <button><a href="">voir plus</a></button>
+                          </div>
+                        </div>  
+
+                        <div class="item" style="background-image: url(/geek/ethical/abbusslogo.png);">
+                            <div class="content">
+                                <div class="name">Zinder</div>
+                                <div class="des">Saboua</div>
+                                <button><a href="">voir plus</a></button>
+                            </div>
+                        </div>    
+
+                <div class="item"  style="background-image: url(/geek/ethical/120512490_2721047751491513_3868308905722298491_n-1.jpg);">
+                    <div class="content">
+                        <div class="name">Diffa</div>
+                        <div class="des">Inguila</div>
+                        <button><a href="">voir plus</a></button>
+                    </div>
+                </div>                              
+
+    </div>
+            <div class="button">
+                <button class="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div style="margin-top: 5px;">
+                    <a id="abbuss" href="https://www.github.com/Nazir-code"> &copy; Nazir-code made it</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script>
+            let next = document.querySelector('.next')
+                let prev = document.querySelector('.prev')
+
+                next.addEventListener('click', function(){
+                    let items = document.querySelectorAll('.item')
+                    document.querySelector('.slide').appendChild(items[0])
+                })
+
+                prev.addEventListener('click', function(){
+                    let items = document.querySelectorAll('.item')
+                    document.querySelector('.slide').prepend(items[items.length - 1])  +.75
+                })
+        </script>
+    </body>
+</html>
+
